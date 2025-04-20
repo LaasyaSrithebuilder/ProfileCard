@@ -1,0 +1,233 @@
+/** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body {
+  background: linear-gradient(135 deg, #5f92d4, rgb(238, 173, 238));
+  background-color: burlywood;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    background: linear-gradient(135deg, rgb(238, 52, 114), #6769d6);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(100, 86, 179, 0.1);
+    max-width: 350px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width : 90%; 
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    box-shadow: 0 10px 25px rgba(100, 86, 179, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  /* Name */
+  /*.card h1 {
+    font-size: 22px;
+    color: #333;
+
+  }
+  
+  /* About */
+  /*.card p {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+  }
+  
+  /* Contact Links */
+  /*.contact a {
+    display: inline-block;
+    margin: 5px 8px;
+    color: #6d28d9;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #e0e7ff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+    background-color: blue;
+    color: #fff;
+
+  } */* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+  background: linear-gradient(135deg, black , #4b0082);
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 350px;
+  padding: 25px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -70px;
+  border: 3px solid white;;
+  box-shadow: 0 4px 12px rgba(14, 7, 7, 0.2);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+h1{
+  margin: 15px 0 5px;
+  font-size: 22px;
+  color: #333;
+}
+
+.title {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+ a {
+  margin: 0px 5px;
+  text-decoration: none;
+  color: #2F80ED;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.resume {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2F80ED;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume:hover {
+  background-color: #1a60c5;
+}
+
+.phone {
+  font-size: 13px;
+  color: #888;
+  margin: 15px 0;
+}a:hover {
+  text-decoration: underline;
+  color: #1a60c5;
+}
+ /* === Responsive Layout for Mobile === */
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+    margin-top: -60px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .resume {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .contact a {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+/* === Icon Animation Effects === */
+.contact a i {
+  margin-right: 8px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #812967;
+  font-size: 20px;
+}
+
+.contact a:hover i {
+  transform: scale(1.2) rotate(5deg);
+  color: #2F80ED;
+}
+
+.resume i {
+  margin-right: 6px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.resume:hover i {
+  transform: scale(1.2) rotate(-5deg);
+  color: #fff;
+}
+
+/* === Resume Button Hover === */
+.resume {
+  background-color: #2F80ED;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.resume:hover {
+  background-color: #812967;
+  color: wheat;
+  transform: scale(1.05);
+}
